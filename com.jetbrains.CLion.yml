@@ -4,7 +4,7 @@ runtime: org.freedesktop.Sdk
 runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
-finish-args: 
+finish-args:
   - --device=all
   - --filesystem=host
   - --filesystem=xdg-run/keyring
@@ -18,12 +18,12 @@ finish-args:
 add-extensions:
   org.freedesktop.Sdk.Compat.i386:
     directory: lib/i386-linux-gnu
-    version: "20.08"
+    version: '20.08'
 
-modules:   
+modules:
   - name: clion
     buildsystem: simple
-    build-commands: 
+    build-commands:
       - install -D apply_extra /app/bin/apply_extra
       - install -D -m755 clion-desktop.sh ${FLATPAK_DEST}/bin/clion-desktop
       - install -D -m644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg
@@ -33,15 +33,15 @@ modules:
     sources:
       - type: script
         dest-filename: apply_extra
-        commands: 
+        commands:
           - tar xf clion.tar.gz
           - mv clion-* clion
           - rm clion.tar.gz
 
       - type: script
         dest-filename: clion-desktop.sh
-        commands: 
-          - exec env PATH=$PATH:/var/data/python/bin /app/extra/clion/bin/clion.sh 
+        commands:
+          - exec env PATH=$PATH:/var/data/python/bin /app/extra/clion/bin/clion.sh
 
       - type: file
         path: com.jetbrains.CLion.appdata.xml
@@ -54,9 +54,9 @@ modules:
 
       - type: extra-data
         filename: clion.tar.gz
-        sha256: b863b5b1ed664c21428e5afafb39ebf7f30d062ef53731f3d093d7ee74abb4cd
-        size: 553585955
-        url: https://download.jetbrains.com/cpp/CLion-2020.2.3.tar.gz
+        sha256: 4301a1572908592e25fd9234c290eabcd44e53b23ababd7ed518a93728527976
+        size: 554105965
+        url: https://download.jetbrains.com/cpp/CLion-2020.2.4.tar.gz
         x-checker-data:
           type: jetbrains
-          code: CL        
+          code: CL
