@@ -5,6 +5,7 @@ runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 finish-args:
+  - --allow=devel
   - --device=all
   - --filesystem=host
   - --filesystem=xdg-run/keyring
