@@ -22,6 +22,8 @@ add-extensions:
     version: '21.08'
 
 modules:
+  - shared-modules/libsecret/libsecret.json
+
   - name: clion
     buildsystem: simple
     build-commands:
