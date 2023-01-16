@@ -24,6 +24,8 @@ add-extensions:
 modules:
   - shared-modules/libsecret/libsecret.json
 
+  - modules/rsync.yml
+
   - name: clion
     buildsystem: simple
     build-commands:
