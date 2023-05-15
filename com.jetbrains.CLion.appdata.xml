@@ -6,9 +6,9 @@
   <name>CLion</name>
   <summary>A cross-platform IDE for C and C++ </summary>
   <description>
-    <p>Trust CLion to take care of the routine while you focus on the important things. Knowing your code through 
-      and through, it can boost your productivity with smart and relevant code completion, instant navigation and 
-      reliable refactorings. 
+    <p>Trust CLion to take care of the routine while you focus on the important things. Knowing your code through
+      and through, it can boost your productivity with smart and relevant code completion, instant navigation and
+      reliable refactorings.
     </p>
     <p>CLion is more than just an editor as it offers a powerful debugger and dynamic analysis tools to investigate
       and solve problems with ease, built-in Google Test, Boost.Test and Catch for unit testing, many popular VCS
@@ -37,6 +37,10 @@
   <update_contact>digitalstreamio@gmail.com</update_contact>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="2023.1.5" date="2023-07-21"/>
+    <release version="2023.1.4" date="2023-06-22"/>
+    <release version="2023.1.3" date="2023-05-16"/>
+    <release version="2023.1.2" date="2023-04-28"/>
     <release version="2022.3.3" date="2023-03-10"/>
     <release version="2022.3.2" date="2023-01-27"/>
     <release version="2022.3" date="2022-11-30"/>
