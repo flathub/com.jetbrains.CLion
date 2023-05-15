@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=CLion
-Exec=clion-desktop
+Exec=clion
 Categories=Development;IDE;
 GenericName=A cross-platform IDE for C and C++
 Icon=com.jetbrains.CLion

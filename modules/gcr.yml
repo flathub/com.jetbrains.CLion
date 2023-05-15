@@ -1,0 +1,24 @@
+name: gcr
+cleanup:
+  - /include
+  - /lib/debug
+  - /lib/girepository-1.0
+  - /lib/pkgconfig
+  - /man
+  - /share/gir-1.0
+  - /share/gtk-doc
+  - /share/doc
+  - /share/man
+  - /share/pkgconfig
+  - '*.a'
+  - '*.la'
+config-opts:
+  - --disable-schemas-compile
+  - --disable-static
+  - --disable-update-mime
+  - --disable-vala
+  - --enable-valgrind=no
+sources:
+  - type: archive
+    sha256: 29df50974a90987af694c0fb8926a6b366e68cacd8abd813817cfe1eb5d54524
+    url: https://download.gnome.org/sources/gcr/3.34/gcr-3.34.0.tar.xz

@@ -1,21 +1,28 @@
 app-id: com.jetbrains.CLion
-command: clion-desktop
+command: clion
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
+tags:
+  - proprietary
 finish-args:
+  - --device=dri
   - --allow=devel
-  - --device=all
   - --filesystem=host
   - --filesystem=xdg-run/keyring
+  - --filesystem=xdg-run/gnupg:ro
   - --share=ipc
   - --share=network
   - --socket=ssh-auth
+  - --socket=wayland
   - --socket=x11
+  - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.gnome.keyring.SystemPrompter
+
 add-extensions:
   org.freedesktop.Sdk.Compat.i386:
     directory: lib/i386-linux-gnu
@@ -23,45 +30,42 @@ add-extensions:
 
 modules:
   - shared-modules/libsecret/libsecret.json
+  - modules/jetbrains-flatpak-wrapper.yml
 
   - modules/rsync.yml
+  - modules/gcr.yml
+  - modules/openssh.yml
+  - modules/pinentry.yml
 
   - name: clion
     buildsystem: simple
     build-commands:
       - install -D apply_extra /app/bin/apply_extra
-      - install -D -m755 clion-desktop.sh ${FLATPAK_DEST}/bin/clion-desktop
       - install -D -m644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg
       - install -D -m644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop
       - install -D -m644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.appdata.xml
+      - cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties
       - mkdir -p /app/lib/i386-linux-gnu /app/lib/debug/lib/i386-linux-gnu
     sources:
       - type: script
         dest-filename: apply_extra
         commands:
-          - tar xf clion.tar.gz
-          - mv clion-* clion
+          - mkdir clion/
+          - tar -xzf clion.tar.gz --directory=clion/ --strip-components=1
           - rm clion.tar.gz
-
-      - type: script
-        dest-filename: clion-desktop.sh
-        commands:
-          - exec env PATH=$PATH:/var/data/python/bin /app/extra/clion/bin/clion.sh
-
       - type: file
         path: com.jetbrains.CLion.appdata.xml
-
       - type: file
         path: com.jetbrains.CLion.desktop
-
       - type: file
         path: com.jetbrains.CLion.svg
-
+      - type: file
+        path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 1b46ff0791bcb38ecb39c5f4a99941f99ed73d4f6d924a2042fdb55afc5fc03d
-        size: 847480188
-        url: https://download.jetbrains.com/cpp/CLion-2022.3.3.tar.gz
+        sha256: 45671bb8cf7b18bd6da2b519b950f28d315ad49d230494a08785e78219e43819
+        size: 863989444
+        url: https://download.jetbrains.com/cpp/CLion-2023.2.tar.gz
         x-checker-data:
           type: jetbrains
           code: CL
