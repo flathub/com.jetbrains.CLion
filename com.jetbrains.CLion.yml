@@ -7,8 +7,9 @@ separate-locales: false
 tags:
   - proprietary
 finish-args:
-  - --device=dri
   - --allow=devel
+  - --device=dri
+  - --env=CLION_PROPERTIES=/app/bin/idea.properties
   - --filesystem=host
   - --filesystem=xdg-run/keyring
   - --filesystem=xdg-run/gnupg:ro
@@ -66,6 +67,21 @@ modules:
         sha256: 45671bb8cf7b18bd6da2b519b950f28d315ad49d230494a08785e78219e43819
         size: 863989444
         url: https://download.jetbrains.com/cpp/CLion-2023.2.tar.gz
+        only-arches:
+          - x86_64
         x-checker-data:
           type: jetbrains
           code: CL
+          is-main-source: true
+      - type: extra-data
+        filename: clion.tar.gz
+        sha256: 3088fe06e75af6f1bc2374843360a9b7242684802727aa3ce9900063d4dd9b4b
+        size: 866108088
+        url: https://download.jetbrains.com/cpp/CLion-2023.2-aarch64.tar.gz
+        only-arches:
+          - aarch64
+        x-checker-data:
+          type: jetbrains
+          code: CL
+          is-main-source: true
+
