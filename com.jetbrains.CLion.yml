@@ -59,9 +59,9 @@ modules:
 
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 1b46ff0791bcb38ecb39c5f4a99941f99ed73d4f6d924a2042fdb55afc5fc03d
-        size: 847480188
-        url: https://download.jetbrains.com/cpp/CLion-2022.3.3.tar.gz
+        sha256: 3dad580f2d4b40815c64da602e37d874bef03bdf50bd70ce63efb4005006cf19
+        size: 869259829
+        url: https://download.jetbrains.com/cpp/CLion-2023.2.1.tar.gz
         x-checker-data:
           type: jetbrains
           code: CL
