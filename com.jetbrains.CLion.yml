@@ -1,7 +1,7 @@
 app-id: com.jetbrains.CLion
 command: clion
 runtime: org.freedesktop.Sdk
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 tags:
@@ -27,7 +27,7 @@ finish-args:
 add-extensions:
   org.freedesktop.Sdk.Compat.i386:
     directory: lib/i386-linux-gnu
-    version: '22.08'
+    version: '23.08'
 
 modules:
   - shared-modules/libsecret/libsecret.json
@@ -64,9 +64,9 @@ modules:
         path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 3dad580f2d4b40815c64da602e37d874bef03bdf50bd70ce63efb4005006cf19
-        size: 869259829
-        url: https://download.jetbrains.com/cpp/CLion-2023.2.1.tar.gz
+        sha256: 941036313c618dcfc62cc36b605ce680a36add52a7e37ee9b1981e52e35e52a3
+        size: 873255621
+        url: https://download.jetbrains.com/cpp/CLion-2023.2.2.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -75,9 +75,9 @@ modules:
           is-main-source: true
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 724a7940ab556c4cafcab2b4b7bce2081a38c60b0c6978e7bf1397dd012e0aa1
-        size: 871348358
-        url: https://download.jetbrains.com/cpp/CLion-2023.2.1-aarch64.tar.gz
+        sha256: 9ceeda2fc4f99e160f7402e0cc0712e480eaa1c12b86feac028bb0d191806d41
+        size: 877348351
+        url: https://download.jetbrains.com/cpp/CLion-2023.2.2-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
