@@ -1,4 +1,0 @@
-name: openssh
-buildsystem: simple
-build-commands:
-  - ln --symbolic /usr/bin/ssh /app/bin/ssh
