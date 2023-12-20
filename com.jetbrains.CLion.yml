@@ -72,8 +72,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        sha256: 60b7e9b9b4bca04405af58a2cd5dff3e68a5607c5bc39ee88a5256dd7a07f58c
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.0/git-lfs-linux-amd64-v3.4.0.tar.gz
+        sha256: 1772dc260961db27958088740b7e9ecebf945abad8c2d504d412448f53faf147
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.1/git-lfs-linux-amd64-v3.4.1.tar.gz
         x-checker-data:
           project-id: 11551
           stable-only: true
@@ -82,8 +82,8 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        sha256: aee90114f8f2eb5a11c1a6e9f1703a2bfcb4dc1fc4ba12a3a574c3a86952a5d0
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.0/git-lfs-linux-arm64-v3.4.0.tar.gz
+        sha256: f93c5070223d95eb44fea0ee2f2db26656793d5f3417366f77dd20b9518c46ce
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.1/git-lfs-linux-arm64-v3.4.1.tar.gz
         x-checker-data:
           project-id: 11551
           stable-only: true
@@ -184,9 +184,9 @@ modules:
         path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 941036313c618dcfc62cc36b605ce680a36add52a7e37ee9b1981e52e35e52a3
-        size: 873255621
-        url: https://download.jetbrains.com/cpp/CLion-2023.2.2.tar.gz
+        sha256: f342d0f62454cea04b89db67dc1a720e6d2b767bbd93bafa270d9c92367086c2
+        size: 906106638
+        url: https://download.jetbrains.com/cpp/CLion-2023.3.2.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -195,9 +195,9 @@ modules:
           is-main-source: true
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 9ceeda2fc4f99e160f7402e0cc0712e480eaa1c12b86feac028bb0d191806d41
-        size: 877348351
-        url: https://download.jetbrains.com/cpp/CLion-2023.2.2-aarch64.tar.gz
+        sha256: b195897988f8f768b7af308d3a642da889cccdb1957477f267574dfc36a84657
+        size: 908432164
+        url: https://download.jetbrains.com/cpp/CLion-2023.3.2-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
