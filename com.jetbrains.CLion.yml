@@ -72,8 +72,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        sha256: 60b7e9b9b4bca04405af58a2cd5dff3e68a5607c5bc39ee88a5256dd7a07f58c
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.0/git-lfs-linux-amd64-v3.4.0.tar.gz
+        sha256: 6f28eb19faa7a968882dca190d92adc82493378b933958d67ceaeb9ebe4d731e
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-amd64-v3.5.1.tar.gz
         x-checker-data:
           project-id: 11551
           stable-only: true
@@ -82,8 +82,8 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        sha256: aee90114f8f2eb5a11c1a6e9f1703a2bfcb4dc1fc4ba12a3a574c3a86952a5d0
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.0/git-lfs-linux-arm64-v3.4.0.tar.gz
+        sha256: 4f8700aacaa0fd26ae5300fb0996aed14d1fd0ce1a63eb690629c132ff5163a9
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-arm64-v3.5.1.tar.gz
         x-checker-data:
           project-id: 11551
           stable-only: true
@@ -145,8 +145,8 @@ modules:
       - --with-included-zlib
     sources:
       - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
-        sha256: 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
+        url: https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
+        sha256: 7399e9a6708c32d678a72a63219e96f23be0be2336e50fd1348498d07041df90
         x-checker-data:
           project-id: 4217
           stable-only: true
@@ -184,9 +184,9 @@ modules:
         path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 3cde2fc25c759d4e114c5a768547e1d3083710e0fbe2591084a4ad4934490fc9
-        size: 905503377
-        url: https://download.jetbrains.com/cpp/CLion-2023.3.1.tar.gz
+        sha256: 2353c1ea5e0fc82b37f4ac33e11cf16e22750e5a1dfa96ab5bc0e0467d1c0abf
+        size: 1214546318
+        url: https://download.jetbrains.com/cpp/CLion-2024.1.2.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -195,9 +195,9 @@ modules:
           is-main-source: true
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 8aa207ee92f518fafc93b5a3bece67f15ce65ee18b8e6c28a393e8dbc0a5ef4f
-        size: 907750137
-        url: https://download.jetbrains.com/cpp/CLion-2023.3.1-aarch64.tar.gz
+        sha256: 1c2b87c9610d5151e1b5e3840cf2ffd95ab84a3fdd3c210e29ecd755a2b46673
+        size: 1212004590
+        url: https://download.jetbrains.com/cpp/CLion-2024.1.2-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
