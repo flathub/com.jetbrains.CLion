@@ -93,7 +93,7 @@ modules:
   - name: jetbrains-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/extra/clion/bin/clion.sh
+      - -Deditor_binary=/app/extra/clion/bin/clion
       - -Deditor_title=IntelliJ CLion
       - -Dprogram_name=clion
     sources:
@@ -184,9 +184,9 @@ modules:
         path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 9843300b426cb88c5a658fea0a33fee4344fa541c52c805149666d1d385bcb58
-        size: 1229688368
-        url: https://download.jetbrains.com/cpp/CLion-2024.1.5.tar.gz
+        sha256: 68400842afee57c35d73fdcf3161146d6679f37111bd7d9eff9cad8ce360e079
+        size: 1524618639
+        url: https://download.jetbrains.com/cpp/CLion-2024.2.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -195,9 +195,9 @@ modules:
           is-main-source: true
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 3ddcd53a35b75a0d8081086166f8f14bf12ce44c6e3a077080cb99fc48d8ba7f
-        size: 1228355467
-        url: https://download.jetbrains.com/cpp/CLion-2024.1.5-aarch64.tar.gz
+        sha256: 1ef84615b71f0b5866d7db515855322cd9bbeaf8d4925cf58ad646f372caad44
+        size: 1520978900
+        url: https://download.jetbrains.com/cpp/CLion-2024.2-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
