@@ -93,7 +93,7 @@ modules:
   - name: jetbrains-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/extra/clion/bin/clion.sh
+      - -Deditor_binary=/app/extra/clion/bin/clion
       - -Deditor_title=IntelliJ CLion
       - -Dprogram_name=clion
     sources:
