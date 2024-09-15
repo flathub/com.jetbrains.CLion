@@ -32,7 +32,7 @@ finish-args:
 add-extensions:
   org.freedesktop.Sdk.Compat.i386:
     directory: lib/i386-linux-gnu
-    version: '23.08'
+    version: '24.08'
 
 modules:
   # -----------------------------------------------------------------------------------------------
