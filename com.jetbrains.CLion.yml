@@ -59,10 +59,11 @@ modules:
       - --disable-update-mime
       - --disable-vala
       - --enable-valgrind=no
+      - -Dcrypto=gnutls
     sources:
       - type: archive
-        sha256: 29df50974a90987af694c0fb8926a6b366e68cacd8abd813817cfe1eb5d54524
-        url: https://download.gnome.org/sources/gcr/3.34/gcr-3.34.0.tar.xz
+        sha256: 9ceaad29284ba919b9216e2888c18ec67240c2c93b3a4856bc5488bbc1f3a383
+        url: https://download.gnome.org/sources/gcr/4.1/gcr-4.1.0.tar.xz
 
   - name: git-lfs
     build-commands:
