@@ -184,9 +184,9 @@ modules:
         path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 90c6ad146b55909ff4e09cf7290c51db2d3f94985e972133c81ad30c4654c74e
-        size: 1425118772
-        url: https://download.jetbrains.com/cpp/CLion-2024.2.1.tar.gz
+        sha256: 1658fb15d41dfb804ab0ea3ed4781d4ae0f41d25cc9df17c3f536a565423aa5b
+        size: 1425685720
+        url: https://download.jetbrains.com/cpp/CLion-2024.2.2.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -195,9 +195,9 @@ modules:
           is-main-source: true
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 2570ecc174498cd137d0df877ddc174a8dab51297851170a8438338361b1674c
-        size: 1421484653
-        url: https://download.jetbrains.com/cpp/CLion-2024.2.1-aarch64.tar.gz
+        sha256: 35e089b8d8bf5f32c80022f394fe525b8aa37540d26c27e861db0df9e34716a4
+        size: 1422054703
+        url: https://download.jetbrains.com/cpp/CLion-2024.2.2-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
