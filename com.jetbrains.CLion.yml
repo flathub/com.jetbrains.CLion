@@ -12,7 +12,6 @@ finish-args:
   - --device=all
   - --env=CLION_PROPERTIES=/app/bin/idea.properties
   - --filesystem=host
-  - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=xdg-run/docker
   - --filesystem=xdg-run/gnupg
   - --filesystem=xdg-run/keyring
