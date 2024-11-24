@@ -13,14 +13,12 @@ finish-args:
   - --env=CLION_PROPERTIES=/app/bin/idea.properties
   - --filesystem=host
   - --filesystem=xdg-run/docker
-  - --filesystem=xdg-run/gnupg
   - --filesystem=xdg-run/keyring
   - --filesystem=xdg-run/podman
   - --share=ipc
   - --share=network
   - --socket=gpg-agent
   - --socket=ssh-auth
-  - --socket=wayland
   - --socket=x11
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
@@ -34,32 +32,6 @@ add-extensions:
     version: '24.08'
 
 modules:
-  - name: git-lfs
-    build-commands:
-      - PREFIX=${FLATPAK_DEST} ./install.sh
-    buildsystem: simple
-    sources:
-      - type: archive
-        only-arches:
-          - x86_64
-        sha256: 6f28eb19faa7a968882dca190d92adc82493378b933958d67ceaeb9ebe4d731e
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-amd64-v3.5.1.tar.gz
-        x-checker-data:
-          project-id: 11551
-          stable-only: true
-          type: anitya
-          url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz
-      - type: archive
-        only-arches:
-          - aarch64
-        sha256: 4f8700aacaa0fd26ae5300fb0996aed14d1fd0ce1a63eb690629c132ff5163a9
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-arm64-v3.5.1.tar.gz
-        x-checker-data:
-          project-id: 11551
-          stable-only: true
-          type: anitya
-          url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-arm64-v$version.tar.gz
-
   - name: jetbrains-flatpak-wrapper
     buildsystem: meson
     config-opts:
@@ -68,8 +40,8 @@ modules:
       - -Dprogram_name=clion
     sources:
       - type: git
-        commit: 5a054811ab2144ceaf343169b240a70eeb4dfb47
         url: https://github.com/Lctrs/jetbrains-flatpak-wrapper.git
+        commit: 5a054811ab2144ceaf343169b240a70eeb4dfb47
 
   - shared-modules/libsecret/libsecret.json
 
