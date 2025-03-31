@@ -40,8 +40,8 @@ modules:
       - -Dprogram_name=clion
     sources:
       - type: git
-        url: https://github.com/Lctrs/jetbrains-flatpak-wrapper.git
-        commit: 5a054811ab2144ceaf343169b240a70eeb4dfb47
+        url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
+        commit: 445fdd20b2f083fe12ac9ac61c1a30864da8a8d1
 
   - shared-modules/libsecret/libsecret.json
 
