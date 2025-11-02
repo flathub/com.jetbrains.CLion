@@ -1,7 +1,7 @@
 app-id: com.jetbrains.CLion
 command: clion
 runtime: org.freedesktop.Sdk
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 tags:
@@ -29,7 +29,7 @@ finish-args:
 add-extensions:
   org.freedesktop.Sdk.Compat.i386:
     directory: lib/i386-linux-gnu
-    version: '24.08'
+    version: '25.08'
 
 modules:
   - name: jetbrains-flatpak-wrapper
