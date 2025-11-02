@@ -6,8 +6,8 @@
   <name>CLion</name>
   <summary>A cross-platform IDE for C and C++ </summary>
   <description>
-    <p>NOTE: This is an unofficial wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
-    <p>NOTE: Due to limitations imposed by the Flatpak sandbox, certain use-cases or features will not work.</p>
+    <p>**NOTE: This is an unofficial wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.**</p>
+    <p>**NOTE: Due to limitations imposed by the Flatpak sandbox, certain use-cases or features will not work.**</p>
     <p>Trust CLion to take care of the routine while you focus on the important things. Knowing your code through
       and through, it can boost your productivity with smart and relevant code completion, instant navigation and
       reliable refactorings.
