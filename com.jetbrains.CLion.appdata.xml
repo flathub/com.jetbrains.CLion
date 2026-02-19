@@ -38,8 +38,11 @@
   <update_contact>digitalstreamio@gmail.com</update_contact>
   <content_rating type="oars-1.1"/>
   <releases>
-    <release version="2025.3.2" date="2026-01-22">
+    <release version="2025.3.3" date="2026-02-19">
       <description></description>
+    </release>
+    <release version="2025.3.2" date="2026-01-22">
+      <description/>
     </release>
     <release version="2025.3.1.1" date="2026-01-12">
       <description/>
