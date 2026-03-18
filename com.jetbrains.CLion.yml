@@ -24,6 +24,7 @@ finish-args:
   - --talk-name=org.freedesktop.Flatpak
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.freedesktop.FileManager1
   - --talk-name=org.gnome.keyring.SystemPrompter
 
 add-extensions:
