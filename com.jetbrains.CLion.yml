@@ -10,7 +10,7 @@ tags:
 finish-args:
   - --allow=devel
   - --device=all
-  - --env=CLION_PROPERTIES=/app/bin/idea.properties
+  - --env=IDEA_PROPERTIES=/app/bin/idea.properties
   - --filesystem=host
   - --filesystem=xdg-run/docker
   - --filesystem=xdg-run/keyring
@@ -19,7 +19,8 @@ finish-args:
   - --share=network
   - --socket=gpg-agent
   - --socket=ssh-auth
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
   - --talk-name=org.freedesktop.Notifications
@@ -42,7 +43,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
-        commit: d581fd9b873acbf6fb22899aa388435f6c00f61a
+        commit: 2881abaf9efc6e14923b8a0bb085275aaf2fbddf
 
   - name: rsync
     cleanup:
