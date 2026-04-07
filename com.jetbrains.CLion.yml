@@ -19,7 +19,8 @@ finish-args:
   - --share=network
   - --socket=gpg-agent
   - --socket=ssh-auth
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
   - --talk-name=org.freedesktop.Notifications
