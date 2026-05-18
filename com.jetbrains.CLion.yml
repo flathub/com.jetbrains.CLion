@@ -56,8 +56,8 @@ modules:
       - --with-included-zlib
     sources:
       - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz
-        sha256: 2924bcb3a1ed8b551fc101f740b9f0fe0a202b115027647cf69850d65fd88c52
+        url: https://download.samba.org/pub/rsync/src/rsync-3.4.2.tar.gz
+        sha256: ff10aa2c151cd4b2dbbe6135126dbc854046113d2dfb49572a348233267eb315
         x-checker-data:
           project-id: 4217
           stable-only: true
@@ -95,9 +95,9 @@ modules:
         path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: d091faaede323477bb7e2afa10ddeebbe546055ca1b1d64a4b6ad02701a1f15f
-        size: 2094517587
-        url: https://download.jetbrains.com/cpp/CLion-2025.3.3.tar.gz
+        sha256: 4372ce869c2953abeb3d613303eb366676d1c68f847a8741507518b375e292bb
+        size: 1753655066
+        url: https://download.jetbrains.com/cpp/CLion-2026.1.2.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -106,9 +106,9 @@ modules:
           is-main-source: true
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 3804fd3422efd3e0fa62c2c6d4792b6a077ae00d40ad9df16ddd2bc81bf4640e
-        size: 2088373708
-        url: https://download.jetbrains.com/cpp/CLion-2025.3.3-aarch64.tar.gz
+        sha256: 60cd74e68ccfefca0b0e6c0a2f4b78678c068c20e1eb1be17ff0b5a020fa422f
+        size: 1742171688
+        url: https://download.jetbrains.com/cpp/CLion-2026.1.2-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
