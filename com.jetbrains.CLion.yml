@@ -1,7 +1,7 @@
 app-id: com.jetbrains.CLion
 command: clion
 runtime: org.freedesktop.Sdk
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 tags:
@@ -30,7 +30,7 @@ finish-args:
 add-extensions:
   org.freedesktop.Sdk.Compat.i386:
     directory: lib/i386-linux-gnu
-    version: '25.08'
+    version: '26.08'
 
 modules:
   - name: jetbrains-flatpak-wrapper
@@ -39,10 +39,14 @@ modules:
       - -Deditor_binary=/app/extra/clion/bin/clion
       - -Deditor_title=IntelliJ CLion
       - -Dprogram_name=clion
+      - -Dfirst_run_template=README.md
+      - -Dflagfile_prefix=flatpak-clion
     sources:
       - type: git
         url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
-        commit: d581fd9b873acbf6fb22899aa388435f6c00f61a
+        commit: a9d22d1b36fc8bb814c77d70957715bbc5840f83
+      - type: file
+        path: README.md
 
   - name: rsync
     cleanup:
@@ -56,8 +60,8 @@ modules:
       - --with-included-zlib
     sources:
       - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz
-        sha256: 2924bcb3a1ed8b551fc101f740b9f0fe0a202b115027647cf69850d65fd88c52
+        url: https://download.samba.org/pub/rsync/src/rsync-3.5.1.tar.gz
+        sha256: c55f9c9dc10fb8bec397b399a0fdded53cc9a2d8e30891bb0d63724d25c37bef
         x-checker-data:
           project-id: 4217
           stable-only: true
@@ -95,9 +99,9 @@ modules:
         path: idea.properties
       - type: extra-data
         filename: clion.tar.gz
-        sha256: d091faaede323477bb7e2afa10ddeebbe546055ca1b1d64a4b6ad02701a1f15f
-        size: 2094517587
-        url: https://download.jetbrains.com/cpp/CLion-2025.3.3.tar.gz
+        sha256: c1d1422450146fb749f18c201af272ef349dcba79a819cf4f72710e2324f0941
+        size: 1894440808
+        url: https://download.jetbrains.com/cpp/CLion-2026.2.4.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -106,9 +110,9 @@ modules:
           is-main-source: true
       - type: extra-data
         filename: clion.tar.gz
-        sha256: 3804fd3422efd3e0fa62c2c6d4792b6a077ae00d40ad9df16ddd2bc81bf4640e
-        size: 2088373708
-        url: https://download.jetbrains.com/cpp/CLion-2025.3.3-aarch64.tar.gz
+        sha256: be7f7da3776838a346e86b1256610642dbea6b7a7fcb3d590a4fddeb46adc24b
+        size: 1911384933
+        url: https://download.jetbrains.com/cpp/CLion-2026.2.4-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
